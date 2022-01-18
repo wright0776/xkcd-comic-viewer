@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css?family=Eater|IM+Fell+Great+Primer+SC|Jacques+Francois|Metal+Mania|Metamorphous|Nosifer|Peddana');
+
+* {
+    box-sizing: border-box;
+    color: red;
+    background-color: black;
+}
+img {
+    max-width: 100%;
+}
+.enter {
+    margin: 50px 20px 100px 20px;
+    height: 100vh;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+.enterCont {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    padding: auto;
+}
+.tv {
+    width: 250px;
+    height: 180px;
+    display: inline-block;
+    background-image: url('https://openclipart.org/image/2400px/svg_to_png/235220/TelevisionEnglish.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.fuzz {
+    box-shadow: inset 0 0 10px 10px black;
+    width: 160px;
+    height: 116px;
+    margin: 25px 0 0 21px;
+    border-radius: 15%;
+    position: relative;
+    display: block;
+    background-image: url('https://vignette.wikia.nocookie.net/five-nights-at-treasure-island/images/6/62/Static_whole.gif/revision/latest?cb=20150131031109');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translate(0, 0);
+}
+.sheep {
+    box-shadow: inset 0 0 10px 10px black;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 15%;
+    animation: sheepFadeIn 10s infinite;
+    background-image: url('https://images.unsplash.com/photo-1497122123454-d63853ca2d39?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0c574ed7dda19e8b7089f3a166eb879b&auto=format&fit=crop&w=2250&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.enterBottomHalf {
+    display: flex;
+    flex-direction: column;
+}
+.enterTitle {
+    font-family: 'im fell great primer sc';
+    overflow: wrap;
+    font-size: 2em;
+    margin: 20px 0 20px 0;
+}
+.enter h3 {
+    font-family: 'im fell great primer sc';
+    font-size: 1.5em;
+    margin: 0 0 40px 0;
+}
+@media (min-width: 480px) {
+    .tv {
+        width: 350px;
+        height: 280px;
+        display: inline-block;
+        background-image: url('https://openclipart.org/image/2400px/svg_to_png/235220/TelevisionEnglish.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .fuzz {
+        box-shadow: inset 0 0 10px 10px black;
+        width: 223px;
+        height: 165px;
+        margin: 47px 0 0 30px;
+        border-radius: 15%;
+        position: relative;
+        display: block;
+        background-image: url('https://vignette.wikia.nocookie.net/five-nights-at-treasure-island/images/6/62/Static_whole.gif/revision/latest?cb=20150131031109');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        transform: translate(0, 0);
+    }
+    .sheep {
+        box-shadow: inset 0 0 10px 10px black;
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 15%;
+        animation: sheepFadeIn 10s infinite;
+        background-image: url('https://images.unsplash.com/photo-1497122123454-d63853ca2d39?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0c574ed7dda19e8b7089f3a166eb879b&auto=format&fit=crop&w=2250&q=80');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .enterCont {
+        margin-top: 50px;
+    }
+    .enterTitle {
+        font-size: 50px;
+    }
+    .enter h3 {
+        margin: 0 0 50px 0;
+    }
+}
+
+@keyframes sheepFadeIn {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: .3;
+    }
+    20% {
+        opacity: .5;
+    }
+    50% {
+        opacity: .2;
+    }
+    80% {
+        opacity: .8;
+    }
+    85% {
+        opacity: .2;
+    }
+    90% {
+        opacity: .6;
+    }
+    100% {
+        opacity: .9;
+    }
+}
+.enterSign {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.enter a {
+    font-family: 'eater';
+    font-size: 3em;
+    box-shadow: 0 0 20px red;
+    padding: 5px 20px 18px 20px;
+    margin: 20px 0 100px 0;
+    text-decoration: none;
+    transition: 10s;
+    animation: wiggle 5s infinite;
+    transform-origin: top;
+}
+.enter a:hover {
+    box-shadow: 0 0 20px 10px red;
+    position: relative;
+}
+@keyframes wiggle {
+    10% {
+        transform: rotateZ(3deg);
+    }
+    20% {
+        transform: rotateZ(-3deg)
+    }
+    30% {
+        transform: rotateZ(2deg)
+    }
+    40% {
+        transform: rotateZ(-2deg)
+    }
+    50% {
+        transform: rotateZ(1deg)
+    }
+    60% {
+        transform: rotateZ(-1deg)
+    }
+    70% {
+        transform: rotateZ(.5deg)
+    }
+    80% {
+        transform: rotateZ(-.5deg)
+    }
+    90% {
+        transform: rotateZ(.2deg)
+    }
+}
+.header {
+    font-family: 'Metamorphous', cursive;
+    -webkit-font-smoothing: antialiased;
+    color: red;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid red;
+    margin: 0 0 10px 0;
+}
+.header h1 {
+    text-align: center;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+}
+.main {
+    margin: 0 10px 0 10px;
+}
+@media (min-width: 500px) {
+    .nav {
+        justify-content: flex-end;
+        margin-right: 0;
+    }
+}
+.nav a {
+    font-family: 'Jacques Francois', serif;
+    text-decoration: none;
+    padding: 5px 7px 5px 7px;
+    box-shadow: inset 0 0 10px rgb(182, 0, 0);
+    border-radius: 5px;
+    margin: 10px;
+}
+.nav a:hover {
+    box-shadow: 0 0 10px red;
+    cursor: pointer;
+}
+.mostRecent button, .random button, .favorites button {
+    border: 1px solid red;
+    color: rgb(201, 201, 201);
+    box-shadow: 0 0 5px red;
+    border-radius: 2px;
+}
+@media (min-width: 600px) {
+    .mostRecent, .random, .favorites {
+        width: 90%;
+        margin: auto;
+    }
+}
+@media (min-width: 700px) {
+    .mostRecent, .random, .favorites {
+        width: 85%;
+    }
+    .header h1 {
+        margin-top: 40px;
+    }
+}
+@media (min-width: 800px) {
+    .mostRecent, .random, .favorites {
+        width: 80%;
+    }
+}
+@media (min-width: 1000px) {
+    .mostRecent, .random {
+        text-align: center;
+    }
+    .favorites {
+        width: 70%
+    }
+}
+.favorites h2 {
+    text-align: center;
+}
+.item {
+    border-bottom: 1px solid red;
+}
+.itemImgCon {
+    border: 1px solid rgb(105, 105, 105);
+}
+@media (min-width: 1200px) {
+    .mostRecent, .random {
+        text-align: center;
+    }
+    .favorites {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .favorites h2 {
+        width: 100%;
+    }
+    .item{
+        width: 45%;
+    }
+    .itemImgCon{
+        max-height: 450px;
+        overflow: scroll;
+
+    }
+}
+.newComic {
+    margin-right: 10px;
+}
+.imgContainer {
+    width: 100%;
+    text-align: center;
+    border: 1px solid rgb(105, 105, 105);
+    margin-top: 20px;
+}
+.comicImg {
+    margin: 20px 0 20px 0;
+}
+.item {
+    margin: 10px 0 50px 0;
+    padding: 0 0 50px 0;
+}
+.footer {
+    margin: 50px 0 100px 0;
+    padding-top: 10px;
+    border-top: 1px solid red;
+}
